@@ -5,10 +5,14 @@ li {
 }
 
 a {
-  color: rgba(255, 255, 255, 0.85);
+  color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 450%;
   line-height: 40px;
+}
+
+.nav-items a:hover{
+  color: #A459D1;
 }
 
 .navbar {
@@ -16,37 +20,59 @@ a {
   justify-content: space-between;
   padding:  2rem;
   height: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
+  width: 88%;
+  margin: auto;
+  border: 1px solid #3DB2FF;
+  border-width: medium;
+  border-radius: 2rem;
+  margin-top: 10px;
 }
 
 .logo {
   /* cursor: pointer; */
   display: block;
   height: auto;
+  margin-left: 3%;
+  background-color: #161616;
+  padding: 5px;
 }
 
 .nav-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: 5px;
 }
 .nav-items a {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  transition: all 0.25s ease-in-out;
 }
 .nav-items li a {
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 .active {
-  color: #606afa;
+  color: #a741fe;
 }
 
 .mobile-menu-icon {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 926px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding:  2rem;
+    height: auto;
+    background-color: white;
+    border: none;
+    width: 100%;
+  }
+
   .logo-resizer {
     width: 180px;
     height: 50px;
@@ -75,7 +101,7 @@ a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.85);
+    color: white;
   }
 
   .nav-items {
@@ -86,6 +112,7 @@ a {
     margin: 0;
     padding: 0;
     margin-top: 2rem;
+    margin-left: 1rem;
   }
 
   .navbar {
@@ -97,12 +124,12 @@ a {
     display: block;
     position: absolute;
     font-size: 30px;
-    color: rgb(218, 211, 211);
+    color: black;
     background-color: transparent;
     border: none;
     outline: none;
     top: 40px;
     right: 25px;
-    transition: all 0.5s ease;
+    transition: all 1s ease-in-out;
   }
 }

@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const navItems = [
     { text: "Home" },
-    { text: "Societies" },
+    { text: "Chapters" },
     { text: "Execom" },
     { text: "Contact Us" },
     { text: "Join IEEE" },
@@ -46,9 +46,9 @@ const Navbar = () => {
         </div>
         <button className="mobile-menu-icon" onClick={handleToggleMenu}>
           {isMobile ? (
-            <FaTimes size={20} style={{ color: "white" }} />
+            <FaTimes size={20} style={{ color: "black" }} />
           ) : (
-            <FaBars size={20} style={{ color: "white" }} />
+            <FaBars size={20} style={{ color: "black" }} />
           )}
         </button>
       </div>
